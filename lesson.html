@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+    .navigation{
+        height: 80px;
+        width: 100%;
+        background: #343a3e;
+        display: flex;
+        align-items: center;
+    }
+    .nav_title{
+        color: #fff;
+        font-size: 40px;
+        font-weight: 300;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        color: white;
+        flex: 1;
+    }
+    li{
+        list-style-type: none;
+        margin-left: 40px;
+        margin-right: 40px;
+        font-size: 22px;
+    }
+    .inp{
+        height: 40px;
+        width: 400px;
+        border: none;
+        border-radius: 7px;
+        outline: none;
+        text-indent: 10px;
+        font-size: 20px;
+    }
+    .btn{
+        height: 40px;
+        width: 120px;
+        border: 1px solid #fff;
+        border-radius: 7px;
+        color: white;
+        background-color: #343a3e;
+        font-size: 20px;
+        margin: 0px 40px 0px 20px;
+    }
+</style>
+<body>
+    <div class="navigation">
+        <h1 class="nav_title">Brand</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Product</li>
+        </ul>
+        <input class="inp" type="text" placeholder="Search">
+        <button class="btn">Search</button>
+    </div>
+</body>
+</html>
